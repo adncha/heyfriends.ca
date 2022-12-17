@@ -1,8 +1,13 @@
-const { defineConfig } = require("cypress");
+const { defineConfig } = require('cypress');
 
 module.exports = defineConfig({
   e2e: {
     baseUrl: 'http://localhost:8888/',
     supportFile: false,
+  },
+  resolve: {
+    fallback: {
+      fs: false,
+    },
   },
 });

@@ -1,7 +1,7 @@
-import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
-import {PhoneForm} from "@components/PhoneForm";
+import Head from 'next/head';
+import Header from '@components/Header';
+import Footer from '@components/Footer';
+import { PhoneForm } from '@components/PhoneForm';
 
 export default function Home() {
   return (
@@ -12,14 +12,14 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header title="Welcome to my app!" />
+        <Header title="Hey Friends!" />
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          Ask anything, <code>answers everything!</code>
         </p>
-          <PhoneForm/>
+        <PhoneForm />
       </main>
 
       <Footer />
     </div>
-  )
+  );
 }
